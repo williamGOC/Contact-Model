@@ -1,1 +1,1 @@
-# Hipercubic Contact Model
+# Contact Model
