@@ -40,6 +40,11 @@ void printer(std::vector<unsigned short> spins, FILE *gnuplotpipe, int L) {
 ```
 The folder ```GPU_EVOLUTION``` contain the parallel version of code. This code if written ```CUDA``` using the ```thrust``` library. This code allows to reach much larger sizes, but for this simple problem this is't necessary.
 ## GPU Requirements
+- Graphic card cuda captable of ```NVIDIA``` 
+- Install CUDA > 8.1
+- thrust library
+- any ```OpenGL``` version
+## GPU Compilation
 ```
-Graphic card cuda captable of NVIDIA 
+nvcc 
 ```
