@@ -1,8 +1,8 @@
 # Contact Model
 The folder ```CPU_CODE``` contain a ```c++``` code for Monte Carlo simulation.
-## Requirements
+## CPU Requirements
 - g++ (c++ compiler)
-## Compilation
+## CPU Compilation
 If you use any version of ```linux``` you can see the time evolution of density system as follow:
 ```
 g++ -D TIME_EVOLUTION contacprocesses.cpp -o contacprocesses.out
@@ -37,4 +37,9 @@ void printer(std::vector<unsigned short> spins, FILE *gnuplotpipe, int L) {
   fprintf(gnuplotpipe, "e\n" );
   fflush(gnuplotpipe);
 }
+```
+The folder ```GPU_EVOLUTION``` contain the parallel version of code. This code if written ```CUDA``` using the ```thrust``` library. This code allows to reach much larger sizes, but for this simple problem this is't necessary.
+## GPU Requirements
+```
+Graphic card cuda captable of NVIDIA 
 ```
